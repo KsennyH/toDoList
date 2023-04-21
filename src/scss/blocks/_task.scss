@@ -1,0 +1,23 @@
+.task {
+    color: #fff;
+    background: #2C2A2A;
+    border-bottom: 1px solid #000000;
+    padding: 20px 25px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    &__buttons {
+        display: flex;
+        column-gap: 15px;
+    }
+    &__text {
+        &_done {
+            color: #34F804;
+        }
+    }
+}

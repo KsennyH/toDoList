@@ -1,0 +1,26 @@
+extends layout/app
+
+block page 
+    .container 
+        .todo 
+            .todo__tasks 
+                //- .task-header
+                //-     .task-header__wrapper 
+                //-         p.task-header__text Задачи в списке отсутствуют
+                //-         img(src="@img/face.webp", alt="")
+                div.tasks 
+                    //- div.tasks__item
+                    //-     .task 
+                    //-         .task__wrapper 
+                    //-             p.task__text Выучить react
+                    //-             .task__buttons
+                    //-                 button(type='button').task__btn.btn.btn_done
+                    //-                     img(src="@img/done.svg", alt="")
+                    //-                 button(type='button').task__btn.btn.btn_delete
+                    //-                     img(src="@img/delete.svg", alt="")
+            .todo__add                                
+                .add-task 
+                    form.form 
+                        input.form__input(type="text" placeholder='Опишите задачу:' required)
+                        button(type='submit').btn-add Добавить
+

@@ -1,0 +1,13 @@
+.btn-add {
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #34F804;
+    line-height: 24px;
+    color: #34F804;
+    transition: background-color .5s ease, color .5s ease;
+    &:hover {
+        background-color: #34F804;
+        color: #000;
+    }
+}
