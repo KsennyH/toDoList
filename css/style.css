@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  min-width: 320px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.none {
+  display: none !important;
+}
+
+.task {
+  color: #fff;
+  background: #2C2A2A;
+  border-bottom: 1px solid #000000;
+  padding: 20px 25px;
+}
+
+.task__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 30px;
+}
+
+.task__buttons {
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+
+.task__text_done {
+  color: #34F804;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
+  border: 1px solid #34f804;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.btn img {
+  pointer-events: none;
+}
+
+.btn:hover {
+  background-color: #585656;
+}
+
+.form__input {
+  width: 100%;
+  background-color: #5F5F5F;
+  color: #fff;
+  padding: 15px 25px;
+  margin-bottom: 50px;
+  transition: border 0.5s ease;
+}
+
+.form__input::-moz-placeholder {
+  font-size: 20px;
+  color: #fff;
+}
+
+.form__input::placeholder {
+  font-size: 20px;
+  color: #fff;
+}
+
+.form__input:focus {
+  border: 1px solid #34f804;
+}
+
+.btn-add {
+  width: 250px;
+  height: 60px;
+  text-align: center;
+  border: 1px solid #34F804;
+  line-height: 24px;
+  color: #34F804;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.btn-add:hover {
+  background-color: #34F804;
+  color: #000;
+}
+
+.add-task {
+  background-color: #000;
+  text-align: center;
+  padding: 25px 25px 70px;
+}
+
+.task-header {
+  background-color: #000;
+  padding: 38px 25px;
+}
+
+.task-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-header__text {
+  font-size: 24px;
+  text-align: center;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.task-header img {
+  width: 50px;
+  height: 50px;
+}
+
+.todo {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.todo__tasks {
+  margin-bottom: 45px;
+}
+
+@supports (-webkit-appearance:none) {
+
+}
+
+@media (max-width: 575.98px) {
+  body {
+    font-size: 16px;
+  }
+
+  .task-header__text {
+    font-size: 20px;
+  }
+
+  .form__input {
+    padding: 10px 25px;
+    margin-bottom: 35px;
+  }
+
+  .form__input::-moz-placeholder {
+    font-size: 16px;
+  }
+
+  .form__input::placeholder {
+    font-size: 16px;
+  }
+
+  .btn-add {
+    width: 180px;
+    height: 45px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
