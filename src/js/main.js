@@ -43,7 +43,7 @@ function addTask(e) {
 }
 
 function removeTask(e) {
-    if(e.target.classList.contains("btn_delete")) {
+    if(!e.target.classList.contains("btn_delete")) return;
         const parent = e.target.closest('.tasks__item');
 
         const taskId = Number(parent.id);
@@ -57,11 +57,10 @@ function removeTask(e) {
         parent.remove();
 
         checkEmptyList()
-    }
 }
 
 function doneTask(e) {
-    if(e.target.classList.contains("btn_done")) {
+    if(!e.target.classList.contains("btn_done")) return;
         const parent = e.target.closest('.tasks__item');
 
         const taskId = Number(parent.id);
@@ -74,7 +73,6 @@ function doneTask(e) {
 
         const taskText = parent.querySelector('.task__text');
         taskText.classList.toggle('task__text_done');
-    }
 }
 
 function checkEmptyList() {
